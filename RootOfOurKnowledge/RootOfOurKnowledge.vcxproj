@@ -19,14 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="background.cpp" />
+    <ClCompile Include="button.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="OptionBox.cpp" />
+    <ClCompile Include="Round.cpp" />
+    <ClCompile Include="QuestionRect.cpp" />
+    <ClCompile Include="TheHost.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="background.h" />
+    <ClInclude Include="button.h" />
     <ClInclude Include="Game.h" />
-    <ClInclude Include="Globals.h" />
-    <ClInclude Include="OptionBox.h" />
+    <ClInclude Include="Round.h" />
+    <ClInclude Include="QuestionRect.h" />
+    <ClInclude Include="TheHost.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="ASSETS\IMAGES\SFML-LOGO.png">
@@ -44,8 +51,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{d0db91cd-c607-4e02-9cc8-e6df88bce881}</ProjectGuid>
-    <RootNamespace>Root_Of_Our_Knowledge</RootNamespace>
+    <ProjectGuid>{e53582cc-aa1b-4a34-82d7-4cd891ee5de2}</ProjectGuid>
+    <RootNamespace>RootOfOurKnowledge</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
