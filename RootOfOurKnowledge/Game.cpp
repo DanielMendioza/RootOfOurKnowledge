@@ -18,8 +18,10 @@ TheHost theHost;
 background bg;
 
 Game::Game()
-    : mWindow(sf::VideoMode(2880, 1620), "Your Awesome Game!")//current computer's resolution too big, use 4:3 ratio 
+    : mWindow(sf::VideoMode(1440, 810), "Your Awesome Game!")//current computer's resolution too big, use 4:3 ratio 
 {
+    sf::Vector2i poss{0,0};
+    mWindow.setPosition(poss);
     initialize();
     bg.SetupBg(mWindow);
     questionFrame.setupShape(mWindow);
@@ -78,6 +80,12 @@ void Game::processEvents()
         case sf::Event::Closed:
             mWindow.close();
             break;
+        case sf::Event::KeyPressed:
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+            {
+                mWindow.close();
+            }
+
         case sf::Event::MouseButtonPressed:
             if (event.mouseButton.button == sf::Mouse::Left)
             {
@@ -117,7 +125,7 @@ void Game::draw()
     mWindow.clear(sf::Color::White);
     bg.draw(mWindow);//draws the background
     questionFrame.draw(mWindow);
-    theHost.draw(mWindow);
+  //  theHost.draw(mWindow);
     // TODO: Draw your objects here
    for (size_t i = 0; i < 4; i++)
     {

@@ -15,6 +15,6 @@ void TheHost::draw(sf::RenderWindow& t_window)
 void TheHost::SetupHost(sf::RenderWindow& t_window)
 {
 	theHostSprite.setOrigin(theHostSprite.getGlobalBounds().width / 2, theHostSprite.getGlobalBounds().height / 2);
-	theHostSprite.setPosition(t_window.getSize().x -470, (((theHostSprite.getGlobalBounds().height / 4)*3) + 800));
-	theHostSprite.setScale(9, 9);
+	theHostSprite.setPosition(t_window.getSize().x -245, (((theHostSprite.getGlobalBounds().height / 4)*3)+400));
+	theHostSprite.setScale(4.5, 4.5);
 }
